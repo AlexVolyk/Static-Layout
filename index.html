@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/lbox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>Mine Static Layout</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-top">
+                <button class="header-btn-login" onclick="down()">Log In</button>
+            </div>
+            <div class="absolute-block " id="abs-blk-act">
+                <div class="abs-blk-inner">
+                    <button class="abs-blk-inner-close" onclick="down()">&#215;</button>
+                    <div class="abs-blk-inner-form">
+                        <h2>Log In</h2>
+                        <label>EMAIL</label>
+                            <input type="text">
+                        <label>PASSWORD</label>
+                            <input type="text">
+                        <a href="#">Forgot your email or password?</a>
+                        <button>LOG IN</button>
+                    </div>
+                    <p>Don't have an account? 
+                        <a href="#">Start your free trial</a>
+                    </p>
+                </div>
+            </div>        
+            <div class="header-bottom">
+                <p class="header-bottom-top-text" >try up to one month free</p>
+                <img src="https://hulu-matchmaker.s3.us-west-2.amazonaws.com/2020-08/Hulu_Logo-01_newgreen.png" alt="Hulu" class="header-bottom-img">
+                <p class="header-bottom-top-title">Watch thousands of TV shows and movies.</p>
+                <p class="header-bottom-text">HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</p>
+                <button class="header-bottom-btn">START YOUR FREE TRIAL</button>
+                <p class="header-bottom-text-under-btn">Free trial for new & eligible returning subscribers only.</p>
+            </div>
+        </div>
+    </header>
+    <div id="bundl">
+        <div class="bundl-inner">
+            <img src="img/companies.png" class="bundl-img">
+            <div class="bundl-info">
+                <p class="bundl-info-title">BUNDLE WITH ANY HULU PLAN & SAVE</p>
+                <p class="bundl-info-text">Get Hulu, Disney+, and ESPN+.</p>
+                <a href="#" class="bundl-info-link">Details</a>
+            </div>
+            <div class="bundl-btn-container">  
+                <button class="bundl-btn-container-btn">GET BUNDLE</button>
+                <p><a href="#" class="bundl-btn-container-link">Terms apply</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="programms">
+        <div class="programms-top">
+            <p class="programms-top-above-title">INCLUDED IN ALL PLANS</p>
+            <p class="programms-top-title">All The TV You Love</p>
+            <p class="programms-top-text">Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</p>
+        </div>
+        <div class="categories-inner">
+            <div class="categories-item"> 
+                <div class="categories-item-gradient"></div>           
+                <img src="/img/bobsburgers-category.jpg" alt="">
+                <div class="categories-description">
+                    <p class="categories-description-title">Past & Current Seasons</p>
+                    <p class="categories-description-category">TV Shows</p>
+                </div>
+            </div>
+
+            <div class="categories-item">
+                <div class="categories-item-gradient"></div>           
+                <img src="/img/unitedstatesvsbillieholiday-category.jpg" alt="">
+                <div class="categories-description">
+                    <p class="categories-description-title">New & Classic</p>
+                    <p class="categories-description-category">Movies</p>
+                </div>
+            </div>
+
+            <div class="categories-item">
+                <div class="categories-item-gradient"></div>           
+                <img src="/img/solaropposites-category.jpg" alt="">
+                <div class="categories-description">
+                    <p class="categories-description-title">Groundbreaking</p>
+                    <p class="categories-description-category">Hulu Originals</p>
+                </div>
+            </div>
+
+            <div class="categories-item">
+                <div class="categories-item-gradient"></div>           
+                <img src="/img/ww84-category.jpg" alt="">
+                <div class="categories-description">
+                    <p class="categories-description-title">Add-on</p>
+                    <p class="categories-description-category">Premiums</p>
+                </div>
+                    <p class="programms-bottom-text">Premium network add-ons available for an additional cost</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- ! JS -->
+    <script>
+        function down(){
+
+            let element = document.getElementById('abs-blk-act');
+            let b = document.body.style;
+
+            if (element.style.display == "none") {
+                element.style.display = "block";
+                b.overflow = "hidden";
+                
+            } else {
+                element.style.display = "none";
+                b.overflow = "auto";
+            }
+        };
+    </script>
+</body>
+</html>
